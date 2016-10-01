@@ -1,0 +1,64 @@
+Agenda
+
+1. Understanding of the Github.
+2. Understanding of the Maven.
+3. Implementation of WordCount Hadoop MapReduce Program in Hadoop Cluster.
+
+Github:
+
+Repository storage where you can store your source code and share with team member work interactively.
+
+Installation:
+
+sudo apt-get install git
+
+Create Repository
+
+Clone - Copy someone else's repository
+
+Commit - Ready to submit your code to repository.
+
+Push - Request to submit your code to repository.
+
+https://github.com - create account and create repository
+
+https://github.com/dskskv/CCCS936
+
+
+Ref.
+
+Cloning Repository: git clone https://github.com/dskskv/hadoopdemo.git
+
+Configure github with your credentials: 
+
+ git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+Add individual file:  sudo git add README.md
+for adding every files:	sudo git add .
+
+
+commit command - sudo git commit -m "Comment anything"
+
+Submit request to github repository with whatever has been added.
+
+sudo git origin master
+
+pull - is to get latest updated code from repository.
+
+Example : git pull https://github.com/dskskv/hadoopdemo.git
+
+Git Branches:
+
+Master branch has updated code.
+
+Example,
+
+Internal
+Final
+
+
+
+
+
