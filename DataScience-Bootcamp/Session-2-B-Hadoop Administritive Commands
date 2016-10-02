@@ -1,0 +1,45 @@
+/* CCCS936 - Data Science, Apache Hadoop Administrative Commands
+ * @Author: DSKSKV@github.com
+ *
+ */
+
+
+1. // Cloning github cccs936 repository
+git clone https://github.com/dskskv/CCCS936.git
+
+2. // Start Hadoop Cluster
+
+3. //Check Hadoop Version
+hadoop version
+
+4. //check all the options under hadoop command
+hadoop
+
+5.// Create Directory as "dskskv" at HDFS
+hadoop fs -mkdir /dskskv
+
+6. // List out the contents of dskskv object inside HDFS
+hadoop fs -ls /dskskv
+
+7. // Create Text file
+sudo gedit inputfile.txt
+
+8. // Put text file inside HDFS block
+hadoop fs -put inputfile.txt /dskskv
+
+9. // Read the content of HDFS textfile object
+hadoop fs -cat /dskskv/inputfile.txt
+
+10. // hadoop deprecated, use hdfs also for the same operations.
+
+hdfs dfs -mkdir /chetan
+
+hdfs dfs -put inputfile.txt /chetan
+
+hdfs dfs -cat /chetan/inputfile.txt
+
+11. // Deleting file from HDFS
+hadoop fs -rm /dskskv/inputfile.txt
+
+12. // Deleting Directory from HDFS
+hadoop fs -rm -r /dskskv
