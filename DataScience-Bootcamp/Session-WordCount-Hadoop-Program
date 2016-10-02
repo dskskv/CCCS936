@@ -1,0 +1,7 @@
+hadoop fs -mkdir /input
+hadoop fs -put /home/student/Documents/inputfile.txt /input
+hadoop fs -cat /input/inputfile.txt
+ hadoop jar /home/student/WordCountDSKSKV-0.0.1-SNAPSHOT.jar /input /output
+hadoop fs -ls /output
+hadoop fs -cat /output/part-r-00000
+
