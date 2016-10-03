@@ -1,0 +1,5 @@
+#SPARK VARIABLES START
+export SPARK_DIST_CLASSPATH=$(hadoop --config /usr/local/hadoop/etc/hadoop classpath)
+export SPARK_HOME=/usr/local/spark-1.6.1
+#SPARK VARIABLES END
+
