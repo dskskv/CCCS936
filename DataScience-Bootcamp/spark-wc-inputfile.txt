@@ -1,0 +1,7 @@
+Hey Guys
+I m Chetan khatri
+I am going to teach you Apache Spark
+Spark is Distributed in memory computation engine
+Spark works based on hadoop mapreduce mechanism
+I like Spark
+I hope you too :)

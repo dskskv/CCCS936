@@ -1,0 +1,28 @@
+1) Start Apache Spark Shell
+./bin/spark-shell
+
+2) Let's Read the text file
+scala> val textFile = sc.textFile("file:///home/chetan306/inputfile.txt")
+
+3) RDDs have actions, which return values, and transformations, which return pointers to new RDDs. Let’s start with a few actions:
+scala> textFile.count()
+scala> textFile.first()
+
+4) Now let’s use a transformation. We will use the filter transformation to return a new RDD with a subset of the items in the file.
+
+val linesWithSpark = textFile.filter(line => line.contains("Spark"))
+
+// Get transformation output.
+
+linesWithSpark.collect()
+
+5) We can chain together transformations and actions:
+
+textFile.filter(line => line.contains("Spark")).count()
+
+6) One common data flow pattern is MapReduce, as popularized by Hadoop. Spark can implement MapReduce flows easily:
+
+val wordCounts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey((a, b) => a + b)
+
+wordCounts.collect()
+
