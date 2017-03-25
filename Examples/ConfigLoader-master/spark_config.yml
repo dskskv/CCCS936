@@ -1,0 +1,3 @@
+sparkJobConfig:
+	spark.hbase.host: 127.0.0.1
+	spark.hbase.table: item-master
